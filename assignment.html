@@ -11,10 +11,18 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
      <script type="text/babel">
        class Assignment extends React.Component {
+         constructor(props){
+           super(props);
+           this.state = {
+             statement2: "I hope this assignment gets approved as well"
+           }
+         }
+
          render(){
            return (
            <div>
              <p>I hope this assignment gets approved</p>
+             <p>{this.state.statement2}</p>
            </div>
          );
         }
